@@ -16,7 +16,7 @@ describe('<App />', () => {
     render(<App />)
     const inputHomeTeam = screen.getByLabelText(/Home Team/i)
     const inputAwayTeam = screen.getByLabelText(/Away Team/i)
-    const startButton = screen.getByRole('button')
+    const [startButton] = screen.getAllByRole('button')
 
     expect(inputHomeTeam).toBeInTheDocument()
     expect(inputAwayTeam).toBeInTheDocument()
