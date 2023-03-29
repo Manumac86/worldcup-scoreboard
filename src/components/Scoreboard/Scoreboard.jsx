@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import StartForm from '../StartForm/StartForm'
-import { Container } from './styles'
-import { sortGamesByTotalScore } from '../../utils/sorters'
+import Summary from '../Summary/Summary'
 import Scores from '../Scores/Scores'
+import { sortGamesByTotalScore } from '../../utils/sorters'
+
+import { Container } from './styles'
 
 const initialTeams = {
   homeTeam: {
@@ -27,6 +29,12 @@ function Scoreboard() {
     setStep(0)
   }
 
+  const handleNewChampionship = () => {
+    setTeams(initialTeams)
+    setGamesSummary(sortGamesByTotalScore([]))
+    setStep(0)
+  }
+
   const onSubmit = (values) => {
     setTeams({
       homeTeam: {
@@ -48,6 +56,10 @@ function Scoreboard() {
         {step === 0 && <StartForm onSubmit={onSubmit} />}
         {step === 1 && <Scores teams={teams} onFinishGame={handleFinishGame} />}
       </Container>
+      <Summary
+        summary={gamesSummary}
+        startNewChampionship={handleNewChampionship}
+      />
     </>
   )
 }
