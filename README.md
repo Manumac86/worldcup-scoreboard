@@ -23,6 +23,11 @@ Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Deploy
+
+The app was deployed using Vercel on https://worldcup-scoreboard.vercel.app/
+
+### GH Actions
+
+You can see tests running on the Actions tab everytime a push to `main` branch is performed, or someone creates a PR against `main` branch. See https://github.com/Manumac86/worldcup-scoreboard/actions
