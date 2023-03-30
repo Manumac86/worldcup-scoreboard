@@ -1,5 +1,7 @@
 # worldcup-scoreboard
 
+The code exercise for SportRadar.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -31,3 +33,7 @@ The app was deployed using Vercel on https://worldcup-scoreboard.vercel.app/
 ## GH Actions
 
 You can see tests running on the Actions tab everytime a push to `main` branch is performed, or someone creates a PR against `main` branch. See https://github.com/Manumac86/worldcup-scoreboard/actions
+
+## Author
+
+[GH: @manumac86](https://github.com/Manumac86)
