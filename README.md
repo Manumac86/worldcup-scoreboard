@@ -24,10 +24,10 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 
-### Deploy
+## Deploy
 
 The app was deployed using Vercel on https://worldcup-scoreboard.vercel.app/
 
-### GH Actions
+## GH Actions
 
 You can see tests running on the Actions tab everytime a push to `main` branch is performed, or someone creates a PR against `main` branch. See https://github.com/Manumac86/worldcup-scoreboard/actions
